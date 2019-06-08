@@ -9,6 +9,11 @@ const initialState = {
     isShowFeedBackForm: false,
     feedBackFormType: '',
 
+    isShowMainMenu: false,
+
+    //MAIN PRESENTATION
+    activeMainPresentationIndex: 0
+
 };
 
 const reducer = (state = initialState, action) => {
@@ -32,6 +37,24 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state,
                 isShowFeedBackForm: false
+            };
+
+        case actionTypes.SHOW_MAIN_MENU:
+            return {
+                ...state,
+                isShowMainMenu: true
+            };
+
+        case actionTypes.HIDE_MAIN_MENU:
+            return {
+                ...state,
+                isShowMainMenu: false
+            };
+
+        case actionTypes.SET_MAIN_PRESENTATION_ACTIVE_INDEX:
+            return {
+                ...state,
+                activeMainPresentationIndex: action.activeIndex
             };
 
         default: return state;

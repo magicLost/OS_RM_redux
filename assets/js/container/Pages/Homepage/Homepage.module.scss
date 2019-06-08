@@ -1,9 +1,41 @@
 .Homepage{
 
+  overflow: hidden;
+
   .Section{
+
+    width: 100%;
+    min-height: calc(100vh - 75px);
+
+  }
+
+
+  .Navigation{
 
 
 
   }
 
+}
+
+.AnimationMoveFromRightToCenter{
+
+  animation: moveFromRightToCenter  0.5s 1 ease;
+
+}
+
+.AnimationMoveFromLeftToCenter{
+
+  animation: moveFromLeftToCenter  0.5s 1 ease;
+
+}
+
+@keyframes moveFromLeftToCenter {
+  from {transform: translate(-100%, 0)}
+  to {transform: translate(0, 0)}
+}
+
+@keyframes moveFromRightToCenter {
+  from {transform: translate(100%, 0)}
+  to {transform: translate(0, 0)}
 }

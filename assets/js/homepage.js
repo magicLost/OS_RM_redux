@@ -16,9 +16,11 @@ import { categories, icons, photos } from "./data/portfolio_data";
 */
 
 import homepageReducer from './store/reducer/homepage';
+import feedBackFormReducer from './store/reducer/feedBackForm';
 
 const reducer = combineReducers({
-    homepage: homepageReducer
+    homepage: homepageReducer,
+    feedBackForm: feedBackFormReducer
 });
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
