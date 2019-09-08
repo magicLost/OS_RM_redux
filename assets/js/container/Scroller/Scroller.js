@@ -596,6 +596,7 @@ class Scroller extends React.Component
         //const translateX = this.listRef.current.getBoundingClientRect().x;
         this._setValues(this.props.itemsLength);
 
+        //x????
         this.offsetX = this.containerRef.current.getBoundingClientRect().right;
 
         const isNeedScroller = this._isNeedScroller(

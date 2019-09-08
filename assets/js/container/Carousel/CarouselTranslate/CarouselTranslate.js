@@ -25,12 +25,6 @@ class CarouselTranslate extends React.Component
 
     };
 
-    constructor(props){
-        super(props);
-
-        //this.itemsLength = this.props.itemsLength;
-    }
-
     mouseDownHandler = (event) => {
 
         event.preventDefault();

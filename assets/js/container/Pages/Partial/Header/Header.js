@@ -25,12 +25,6 @@ class Header extends React.PureComponent
 
     };
 
-    constructor(props){
-
-        super(props);
-
-    }
-
     componentDidMount = () => {
 
         this.body = document.body;

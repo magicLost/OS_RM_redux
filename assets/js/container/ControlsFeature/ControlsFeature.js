@@ -159,7 +159,7 @@ class ControlsFeature extends React.PureComponent
 
                 if(target && target.dataset && target.dataset.index){
 
-                    const index = parseInt(target.dataset.index);
+                    index = parseInt(target.dataset.index);
                     //console.log("call this.props.setActiveCarouselIndex with index == " + index);
                     this.props.itemClickHandler(index);
 
