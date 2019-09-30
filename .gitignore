@@ -6,6 +6,10 @@
 /public/bundles/
 /var/
 /vendor/
+
+/public.local/build
+/assets/static/
+
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
@@ -21,5 +25,4 @@
 ###> Nodejs ###
 /node_modules
 
-/public.local/build
-/assets/static/
+
